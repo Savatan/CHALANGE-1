@@ -18,10 +18,22 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html.accessible-mode {
+  font-size: 115%;
+}
+
+html.accessible-mode body {
+  line-height: 1.7;
+}
+
+html.accessible-mode * {
+  outline-width: 2px;
 }
 
 * {
